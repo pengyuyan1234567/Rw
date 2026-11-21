@@ -1,16 +1,20 @@
-Package: rpkg.template
-Title: What the Package Does (One Line, Title Case)
+Package: Rw
+Title: Segmented Regression and Seasonal Adjustment Utilities
 Version: 0.1.0.9000
-Authors@R: c(
-  person("Dongdong", "Kong", role = c("aut", "cre"), 
-         email = "kongdd.sysu@gmail.com", comment = c(ORCID = "0000-0003-1836-8172")))
-Description: What the package does (one paragraph).
+Authors@R: 
+    person("Yuyan", "Peng", role = c("aut", "cre"),
+           email = "pengyuyan1234567@users.noreply.github.com")
+Description: Fast piecewise regression with one or several break points
+    (constant slope, segment specific intercepts), together with a simple
+    climatology based de-seasonalisation helper. The regression routines are
+    built on 'stats' internals and are meant to be called many times inside
+    a search over candidate break points.
 License: MIT + file LICENSE
 Imports:
-    magrittr
+    stats
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1
