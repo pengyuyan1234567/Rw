@@ -1,6 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
+.Ruserdata
 
 */temp
 */*/temp
+
+*.Rcheck/
+*.tar.gz
+docs/*.pdf
